@@ -1,5 +1,3 @@
-'use client'
-
 // Import Components
 import AnimatedCounter from './AnimatedCounter'
 import DoughnutChart from './DoughnutChart'
