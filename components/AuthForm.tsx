@@ -1,20 +1,38 @@
 'use client'
 
+// Import Next Components
 import Image from 'next/image'
 import Link from 'next/link'
+
+// Import UseState from React
 import { useState } from 'react'
 
+// Import Z - Zod
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+
+// Import UseFrom from React-Hook-Form
 import { useForm } from 'react-hook-form'
+
+// Import UI Components from Shadcn/UI
 import { Button } from '@/components/ui/button'
 import { Form } from '@/components/ui/form'
+
+// Import Utils from LIB
 import { authFormSchema } from '@/lib/utils'
+
+// Import Loader from Lucide-React
 import { Loader2 } from 'lucide-react'
+
+// Import UseRouter from Next-Navigation
 import { useRouter } from 'next/navigation'
-import { getLoggedInUser, signIn, signUp } from '@/lib/actions/user.actions'
+
+// Import Actions from LIB
+
+// Import Components
 import PlaidLink from './PlaidLink'
 import CustomInput from './CustomInput'
+import { signIn, signUp } from '@/lib/actions/user.action'
 
 const AuthForm = ({ type }: { type: string }) => {
    const router = useRouter()
