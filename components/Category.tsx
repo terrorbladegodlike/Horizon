@@ -1,13 +1,8 @@
-// Import Next Component
 import Image from 'next/image'
 
-// Import Constants
 import { topCategoryStyles } from '@/constants'
-
-// Import Utils
 import { cn } from '@/lib/utils'
 
-// Import Shadcn UI
 import { Progress } from './ui/progress'
 
 const Category = ({ category }: CategoryProps) => {

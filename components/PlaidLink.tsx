@@ -1,24 +1,13 @@
-// Import React Components
 import React, { useCallback, useEffect, useState } from 'react'
-
-// Import Ui Components from Shadcn/UI
 import { Button } from './ui/button'
-
-// Import Components from React-Plaid-Link
 import {
    PlaidLinkOnSuccess,
    PlaidLinkOptions,
    usePlaidLink,
 } from 'react-plaid-link'
-
-// Import UseRouter from Navigation
 import { useRouter } from 'next/navigation'
-
-// Import Actions
-import { createLinkToken, exchangePublicToken } from '@/lib/actions/user.action'
-
-// Import Image from
 import Image from 'next/image'
+import { createLinkToken, exchangePublicToken } from '@/lib/actions/user.action'
 
 const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
    const router = useRouter()

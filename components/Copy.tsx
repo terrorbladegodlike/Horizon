@@ -1,9 +1,6 @@
 'use client'
-
-// Import UseState
 import { useState } from 'react'
 
-// Import Shadcn UI
 import { Button } from './ui/button'
 
 const Copy = ({ title }: { title: string }) => {

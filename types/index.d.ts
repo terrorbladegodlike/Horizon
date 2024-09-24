@@ -194,7 +194,7 @@ declare interface AuthFormProps {
 
 declare interface BankDropdownProps {
   accounts: Account[];
-  setValue?: UseFormSetValue<T>;
+  setValue?: UseFormSetValue<any>;
   otherStyles?: string;
 }
 
